@@ -3,27 +3,28 @@ package JavaInheritance;
 /**
  * Created by pooja on 21/8/17.
  */
-class parent{
-     void show(){
-        System.out.println("In parent class method");
+class Bank{
+    void rateOfInterest() {
+        System.out.println("0");
     }
 }
-class Child extends parent{
-    Child()
+class SBI extends Bank{
+    void rateOfInterest()
     {
-       super.show();
+        System.out.println("4");
     }
-    void show(){
-        System.out.println("In child class method");
+}
+class ICICI extends Bank{
+    void rateOfInterest(){
+        System.out.println("5");
     }
 }
 public class javaOverriding {
     public static void main(String[] args) {
-        Child c = new Child();
-        c.show();
-        parent p=new parent();
-        p.show();
-
+        SBI s=new SBI();
+        ICICI i=new ICICI();
+        s.rateOfInterest();
+        i.rateOfInterest();
 
     }
 }
