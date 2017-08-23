@@ -4,27 +4,27 @@ package JavaInheritance;
  * Created by pooja on 21/8/17.
  */
 class Bank{
-    void rateOfInterest() {
-        System.out.println("0");
+    int rateOfInterest() {
+        return 0;
     }
 }
 class SBI extends Bank{
-    void rateOfInterest()
+    int rateOfInterest()
     {
-        System.out.println("4");
+       return 4;
     }
 }
 class ICICI extends Bank{
-    void rateOfInterest(){
-        System.out.println("5");
+    int rateOfInterest(){
+        return 5;
     }
 }
 public class javaOverriding {
     public static void main(String[] args) {
         SBI s=new SBI();
         ICICI i=new ICICI();
-        s.rateOfInterest();
-        i.rateOfInterest();
+        System.out.println("SBI Rate of Interest = "+s.rateOfInterest());
+        System.out.println("ICICI Rate of Interest = "+i.rateOfInterest());
 
     }
 }
