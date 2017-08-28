@@ -20,12 +20,15 @@ public class JavaArrayList {
         System.out.println(list1);
         list.addAll(list1);
         System.out.println(list);
-        list.removeAll(list1);
+        list.remove(4);
         System.out.println(list);
+        int size=list.size();
 //        list1.removeAll(list);
-//        System.out.println(list1);
-//       list.contains(  list1 );
-//        System.out.println(list1);
+        System.out.println(size);
+         boolean num=list.contains( 30 );
+        System.out.println(num);
+        int n=list.hashCode();
+        System.out.println(n);
 // print list
     }
 }

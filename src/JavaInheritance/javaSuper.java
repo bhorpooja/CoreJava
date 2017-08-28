@@ -24,18 +24,19 @@ class Parent1 extends Parent
       System.out.println(super.a);
   }
   void disp1(){
-      System.out.println("It's immediate parent method");
+      disp();
+      System.out.println("It's parent1 method");
   }
 
-    public static void main(String[] args) {
-//        Parent1 p=new Parent1();
+//    public static void main(String[] args) {
+//      Parent1 p=new Parent1();
 //        p.disp1();
-    }
+//    }
 }
 
 public class javaSuper extends Parent1 {
 
-    int a=20;
+    int a=30;
     void show()
     {
         disp1();
