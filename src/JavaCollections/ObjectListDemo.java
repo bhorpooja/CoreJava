@@ -30,7 +30,7 @@ class ObjectsGrouping {
         list.add(s1);
         list.add(s2);
         list.add(s3);
-        System.out.println(list);
+       // System.out.println(list);
 
         System.out.println("Using for loop");
         for (Students s:list) {
