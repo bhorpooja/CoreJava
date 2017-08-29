@@ -23,7 +23,7 @@ public class JavaArrayList {
         list.remove(4);
         System.out.println(list);
         int size=list.size();
-//        list1.removeAll(list);
+//      list1.removeAll(list);
         System.out.println(size);
          boolean num=list.contains( 30 );
         System.out.println(num);
