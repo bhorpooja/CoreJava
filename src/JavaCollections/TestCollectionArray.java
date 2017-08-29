@@ -8,6 +8,16 @@ import java.util.Iterator;
  */
 class Student{
     int id;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", clg='" + clg + '\'' +
+                '}';
+    }
+
     String name;
     String clg;
     Student(int id,String name,String clg){
@@ -18,20 +28,28 @@ class Student{
 }
 public class TestCollectionArray {
     public static void main(String[] args) {
-        Student s1 = new Student(1, "Pooja", "SVCET");
-        Student s2 = new Student(2, "Rajan", "COEP");
-        Student s3 = new Student(3, "Vaibhav", "GPP");
-        Student s4 = new Student(4, "Rohan", "PCCOE");
         ArrayList<Student> stud = new ArrayList<Student>();
+        Student s1 =new  Student(1, "Pooja", "SVCET");
         stud.add(s1);
+        Student s2 = new Student(2, "Rajan", "COEP");
         stud.add(s2);
-        stud.add(s3);
-        stud.add(s4);
-        Iterator    i=stud.iterator();
+//        Student s3 = new Student(3, "Vaibhav", "GPP");
+//        stud.add(s3);
+//        Student s4 = new Student(4, "Rohan", "PCCOE");
+//        stud.add(s4);
+
+
+
+
+        Iterator i=stud.iterator();
         while (i.hasNext()){
             Student s=(Student)i.next();
             System.out.println("ID = "+s.id+" Name = "+s.name+" College = "+s.clg);
         }
         System.out.println();
+        for (Student s:stud) {
+           // System.out.println("ID = "+s.id+" Name = "+s.name+" College = "+s.clg);
+            System.out.println(stud);
+        }
     }
 }
