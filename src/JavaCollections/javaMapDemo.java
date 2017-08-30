@@ -52,7 +52,7 @@ public class javaMapDemo {
             {
                 List<Students> sss=m.getValue();
                 for (Students st:sss){
-                    System.out.println(st.getRoll_no()+" "+st.getName()+" "+st.getCity());
+                    System.out.println(m.getKey()+" "+st.getRoll_no()+" "+st.getName()+" "+st.getCity());
                 }
             }
        }
@@ -75,34 +75,81 @@ public class javaMapDemo {
 
             list.add(map1);
 
-            System.out.println("Iterating list of mapOfobject");
+            System.out.println("\n Iterating list of mapOfobject");
             for (Map<String,Students> m:list) {
                 for (Map.Entry<String,Students> w:m.entrySet()) {
+                    String key=w.getKey();
+                    Students a=w.getValue();
+                    System.out.println(key+" "+a.getRoll_no()+" "+a.getName()+" "+a.getCity());
+
                     System.out.println(w.getKey()+" "+w.getValue());
                 }
 
 
             }
         }
-//        void mapAdd(){
-//            Map<Integer,String> map2=new HashMap<>();
-//            map2.put(11,"A");
-//            map2.put(12,"B");
-//            map2.put(13,"C");
-//            System.out.println(map2);
+        void mapAdd(){
+            Map<Integer,String> map2=new HashMap<>();
+            map2.put(11,"A");
+            map2.put(12,"B");
+            map2.put(13,"C");
+            System.out.print("MAP2 : ");
+            System.out.println(map2);
 //            for (Map.Entry e:map2.entrySet()){
 //                System.out.println(e.getKey()+" "+e.getValue());
 //            }
-//
-//            Map<Integer,String> map3=new HashMap<>();
-//
-//
-//        }
+
+            Map<Integer,String> map3=new HashMap<>();
+            map3.put(14,"D");
+            map3.put(15,"E");
+            System.out.print("MAP3 : ");
+            System.out.println(map3);
+//            for (Map.Entry e:map3.entrySet()) {
+//                System.out.println(e.getKey()+" "+e.getValue());
+//            }
+            System.out.println("put one map to another map");
+            map2.putAll(map3);
+            for (Map.Entry e:map2.entrySet()) {
+                System.out.println(e.getKey()+" "+e.getValue());
+            }
+
+            System.out.println("checking num of key-value mapping");
+            System.out.println(map2.size());
+
+            System.out.println("checking whether map is empty or not");
+            System.out.println(map2.isEmpty());
+
+            System.out.println("checking map contain mapping of specified key");
+            System.out.println(map2.containsKey(10));
+
+            System.out.println("checking is map contain mapping to specified value");
+            System.out.println(map2.containsValue("D"));
+
+            System.out.println("getting value to which specified key is mapped");
+            System.out.println(map2.get(12));
+
+            System.out.println("getting view of key contained in map");
+            System.out.println(map2.keySet());
+
+            System.out.println("getting view of values contained in map");
+            System.out.println(map2.values());
+
+            System.out.println("Map.Entry subInterface Methods");
+            System.out.println("getKey() and getValue() and setValue(value)");
+            for(Map.Entry e:map2.entrySet()) {
+                //System.out.println(e.getKey() + " " + e.getValue());
+                System.out.println(e.setValue("Hii"));
+            }
+            System.out.println(map2);
+
+//            System.out.println("compare specified object with list");
+//            System.out.println(map2.get(12).equals(map3.get(13)));
+        }
     public static void main(String[] args) {
         javaMapDemo m=new javaMapDemo();
 //        m.javaMap();
-        m.MapDemo();
-        m.listDemo();
-//        m.mapAdd();
+//        m.MapDemo();
+ //       m.listDemo();
+        m.mapAdd();
     }
 }
