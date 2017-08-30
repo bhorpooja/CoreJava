@@ -5,7 +5,8 @@ package JavaCollections;
  */
 public class Students {
     int roll_no;
-
+    String name;
+    String city;
     @Override
     public String toString() {
         return "Students{" +
@@ -15,8 +16,7 @@ public class Students {
                 '}';
     }
 
-    String name;
-    String city;
+
 
     public int getRoll_no() {
         return roll_no;

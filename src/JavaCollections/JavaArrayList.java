@@ -2,6 +2,7 @@ package JavaCollections;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 /**
  * Created by i net on 17/08/2017.///
@@ -30,8 +31,33 @@ class JavaArrayDemo {
         System.out.println("adding one list to another from specified index");
         list1.addAll(2,list2);
         System.out.println(list1);
+        System.out.println("replacing specified position element of list to specified element");
         list1.set(6,60);
         System.out.println(list1);
+
+
+    }
+    void listGet(){
+        System.out.println("getting specified position element from list");
+        System.out.println(list1.get(7));
+        System.out.println("getting the fist occurrence of specified element of list");
+        System.out.println(list1.indexOf(30));
+        System.out.println("getting the last occurrence of specified element of list");
+        System.out.println(list1.lastIndexOf(30));
+        System.out.println("getting listIterator over the element in this list");
+        ListIterator l=list1.listIterator(3);
+        System.out.println(l);
+        System.out.println("getting the view of list between specified index");
+        System.out.println(list1.subList(2,4));
+        System.out.println("getting the hash code value of list");
+        System.out.println(list1.hashCode());
+        System.out.println("compare specified object with list");
+        System.out.println(list1.equals(list2));
+        System.out.println("getting whether specified element is within list or not");
+        System.out.println(list1.contains(30));
+        System.out.println("getting that whether list is empty or not");
+        System.out.println(list1.isEmpty());
+        System.out.println(list2.clone());
 
     }
 
@@ -51,12 +77,14 @@ class JavaArrayDemo {
         System.out.println(list1);
 
     }
+
 }
 
 public class JavaArrayList {
     public static void main(String[] args) {
         JavaArrayDemo javaArrayDemo = new JavaArrayDemo();
         javaArrayDemo.add();
+        javaArrayDemo.listGet();
         javaArrayDemo.removeElement();
     }
 }
