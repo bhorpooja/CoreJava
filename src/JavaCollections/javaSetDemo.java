@@ -54,8 +54,13 @@ class SetDemo{
         System.out.println(set1.iterator());
         System.out.println(set1.remove(1));
         System.out.println(set1);
-        System.out.println(set1.removeAll(set2));
+//        System.out.println(set1.removeAll(set2));
+//        System.out.println(set1);
+
+       set1.toArray();
         System.out.println(set1);
+
+
         }
 }
 public class javaSetDemo {
