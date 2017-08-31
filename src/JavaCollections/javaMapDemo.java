@@ -158,12 +158,16 @@ public class javaMapDemo {
             System.out.println("getting the hash code value of map entry");
             System.out.println(map2.hashCode());
             System.out.println("remove map entry");
-//            map2.remove(11,"Hii");
-//            System.out.println(map2);
+//          map2.remove(11,"Hii");
+//          System.out.println(map2);
 
-            map2.replace(11,"Hii","");
+            map2.replace(11,"Hii",null);
+            map2.put(40,null);
             System.out.println(map2);
-            map2.computeIfAbsent(map2.get(11),map2.)
+            map2.computeIfAbsent(40,key->"sonal");
+            System.out.println(map2);
+            map2.computeIfAbsent(11,key->"pooja");
+            System.out.println(map2);
         }
     public static void main(String[] args) {
         javaMapDemo m=new javaMapDemo();
