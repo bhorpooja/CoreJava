@@ -21,7 +21,7 @@ public class abstractAnonymInnerClass {
         Inner i = new Inner() {
             @Override
             void display() {
-                System.out.println("In abstract method");
+                System.out.println("In abstract method "+name+" "+a);
 
             }
 

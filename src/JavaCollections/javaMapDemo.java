@@ -78,11 +78,11 @@ public class javaMapDemo {
             System.out.println("\n Iterating list of mapOfobject");
             for (Map<String,Students> m:list) {
                 for (Map.Entry<String,Students> w:m.entrySet()) {
-                    String key=w.getKey();
+                   // String key=w.getKey();
                     Students a=w.getValue();
-                    System.out.println(key+" "+a.getRoll_no()+" "+a.getName()+" "+a.getCity());
+                    System.out.println(w.getKey()+" "+a.getRoll_no()+" "+a.getName()+" "+a.getCity());
 
-                    System.out.println(w.getKey()+" "+w.getValue());
+                    //System.out.println(w.getKey()+" "+w.getValue());
                 }
 
 
@@ -137,17 +137,37 @@ public class javaMapDemo {
             System.out.println("Map.Entry subInterface Methods");
             System.out.println("getKey() and getValue() and setValue(value)");
             for(Map.Entry e:map2.entrySet()) {
-                //System.out.println(e.getKey() + " " + e.getValue());
-                System.out.println(e.setValue("Hii"));
+                System.out.println(e.getKey() + " " + e.getValue());
+                //System.out.println(e.setValue("Hii"));
             }
             System.out.println(map2);
+            System.out.println("Replacing the value of specified key only if it is currently mapped to some value.");
+            map3.replace(14,"Hii");
+            System.out.println(map3);
 
-//            System.out.println("compare specified object with list");
-//            System.out.println(map2.get(12).equals(map3.get(13)));
+            map2.replace(11,"A","Hii");
+            System.out.println(map2);
+
+            System.out.println("Map Equality Method");
+            System.out.println("check given key having specified value");
+            System.out.println(map2.get(11).equals("A"));
+            System.out.println(map2.get(11).equalsIgnoreCase("hii"));
+            System.out.println("check equality between two map entry");
+            System.out.println(map2.get(11).equals(map3.get(14)));
+
+            System.out.println("getting the hash code value of map entry");
+            System.out.println(map2.hashCode());
+            System.out.println("remove map entry");
+//            map2.remove(11,"Hii");
+//            System.out.println(map2);
+
+            map2.replace(11,"Hii","");
+            System.out.println(map2);
+            map2.computeIfAbsent(map2.get(11),map2.)
         }
     public static void main(String[] args) {
         javaMapDemo m=new javaMapDemo();
-//        m.javaMap();
+ //       m.javaMap();
 //        m.MapDemo();
  //       m.listDemo();
         m.mapAdd();
