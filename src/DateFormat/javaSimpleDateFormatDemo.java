@@ -10,6 +10,7 @@ public class javaSimpleDateFormatDemo {
     public static void main(String[] args) {
         System.out.println("SimpleDateFormat : Date to String");
         Date date=new Date();
+        System.out.println(date);
         SimpleDateFormat formatter=new SimpleDateFormat("dd/MM/YYYY");
         String str=formatter.format(date);
         System.out.println("Date Format DD/MM/YYYY : "+str);
