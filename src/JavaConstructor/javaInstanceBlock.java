@@ -1,4 +1,4 @@
-package JavaString;
+package JavaConstructor;
 
 /**
  * Created by pooja on 29/8/17.

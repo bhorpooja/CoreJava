@@ -8,6 +8,8 @@ import java.util.List;
  */
 class listDemo{
     int id;
+    String name;
+    String clg;
 
     @Override
     public String toString() {
@@ -18,8 +20,6 @@ class listDemo{
                 '}';
     }
 
-    String name;
-    String clg;
     listDemo(int id,String name,String clg){
         this.id=id;
         this.name=name;
