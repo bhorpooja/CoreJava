@@ -1,4 +1,4 @@
-package JavaEncapsulation;
+package javaAbstraction;
 
 /**
  * Created by pooja on 31/8/17.

@@ -10,7 +10,7 @@ class multiArray {
     Scanner s = new Scanner(System.in);
     int i, j, n = 0,len=0;
 
-    void get() {
+    int[][] get() {
 
         System.out.println("Enter size of array");
         n = s.nextInt();
@@ -22,36 +22,42 @@ class multiArray {
                 arr[i][j] = s.nextInt();
             }
         }
-        System.out.println("Actual Array");
-        for (i = 0; i < len; i++) {
-            for (j = 0; j < len; j++) {
-                System.out.print(arr[i][j] + "  ");
-            }
-            System.out.println("");
-        }
-        System.out.println("Left Diagonal Element of array");
-        for (i = 0; i < len; i++) {
-            for (j=0; j < len; j++){
-                if (i==j)
-                    System.out.print(arr[i][j]);
-                System.out.print("  ");
-            }
-            System.out.println("");
-        }
-        System.out.println("Right Diagonal Element of array");
-        for (i = 0; i <= len; i++) {
-            for (j=0; j <=len; j++){
-                if(i+j==len-1){
-                    System.out.print(arr[i][j]);
+        return arr;
+    }
+        void printArray(){
+         int[][] arr=get();
+            System.out.println("Actual Array");
+            for (i = 0; i < len; i++) {
+                for (j = 0; j < len; j++) {
+                    System.out.print(arr[i][j] + "  ");
                 }
-                else{
+                System.out.println("");
+            }
+            System.out.println("Left Diagonal Element of array");
+            for (i = 0; i < len; i++) {
+                for (j=0; j < len; j++){
+                    if (i==j)
+                        System.out.print(arr[i][j]);
                     System.out.print("  ");
                 }
+                System.out.println("");
             }
-            System.out.println("");
+            System.out.println("Right Diagonal Element of array");
+            for (i = 0; i <= len; i++) {
+                for (j=0; j <=len; j++){
+                    if(i+j==len-1){
+                        System.out.print(arr[i][j]);
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+                System.out.println("");
 
-        }
+            }
     }
+
+
 
     void arraySort() {
         int[] arr = {3, 4, 2, 5, 6, 1};
@@ -119,7 +125,7 @@ class multiArray {
 public class javaArrayDemo {
     public static void main(String[] args) {
         multiArray m=new multiArray();
-        m.get();
+        m.printArray();
        // m.arraySort();
        // m.arrayMin1();
         //m.arrayMin2();

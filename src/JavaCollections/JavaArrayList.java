@@ -11,7 +11,7 @@ class JavaArrayDemo {
     List<Integer> list1 = new ArrayList<>();
     ArrayList<Integer> list2 = new ArrayList<Integer>();
 
-    void add() {
+    void addArrayList() {
 
         System.out.println("add element sequentially..");
         list1.add(10);
@@ -37,7 +37,7 @@ class JavaArrayDemo {
 
 
     }
-    void listGet(){
+    void getArrayList(){
         System.out.println("getting specified position element from list");
         System.out.println(list1.get(7));
         System.out.println("getting the fist occurrence of specified element of list");
@@ -83,8 +83,8 @@ class JavaArrayDemo {
 public class JavaArrayList {
     public static void main(String[] args) {
         JavaArrayDemo javaArrayDemo = new JavaArrayDemo();
-        javaArrayDemo.add();
-        javaArrayDemo.listGet();
+        javaArrayDemo.addArrayList();
+        javaArrayDemo.getArrayList();
         javaArrayDemo.removeElement();
     }
 }

@@ -21,6 +21,7 @@ class Test{
         str=DateFormat.getDateInstance(1).format(date);
         System.out.println(str);
 
+
         str=DateFormat.getDateInstance(2).format(date);
         System.out.println(str);
 

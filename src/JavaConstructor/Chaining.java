@@ -20,7 +20,9 @@ public class Chaining
         }
         Chaining(int b)
         {
+            //System.out.println("");
             this();
+            //this(a,b);
         //    System.out.println("Enter Value of b : ");
           //  b=s.nextInt();
             System.out.println("Value of b : "+b);
@@ -36,7 +38,7 @@ public class Chaining
         }
 
     public static void main(String[] args) {
-        Chaining c=new Chaining(100,10);
+        Chaining c=new Chaining(10,10);
 
     }
 }

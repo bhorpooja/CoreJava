@@ -1,6 +1,4 @@
-package JavaArray;
-
-import java.text.DateFormat;
+package JavaString;
 
 /**
  * Created by pooja on 1/9/17.
@@ -8,10 +6,10 @@ import java.text.DateFormat;
 class Demo{
     void stringReverse(){
         String s="pooja bhor";
-        StringBuilder str=new StringBuilder();
+        StringBuffer str=new StringBuffer();
         for (String st:s.split(" ")){
             String ss=new StringBuffer(st).reverse().toString();
-            ss=ss.substring(0);
+           // ss=ss.substring(0);
             str.append(ss).append(" ");
 
         }
