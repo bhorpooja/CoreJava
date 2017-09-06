@@ -10,7 +10,7 @@ import java.io.IOException;
 class ReadFile{
     void readFromFile(){
         try {
-            FileInputStream file=new FileInputStream("/home/pooja/pooja.txt");
+            FileInputStream file=new FileInputStream("/home/pooja/out.txt");
             int i=0;
             while ((i=file.read())!=-1) {
                 System.out.print((char)i);

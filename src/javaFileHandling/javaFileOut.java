@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 class WriteFile{
     void writeToFile(){
-        try (FileOutputStream file = new FileOutputStream("/home/pooja/pooja.txt")) {
+        try (FileOutputStream file = new FileOutputStream("/home/pooja/out.txt")) {
             String str="File handling Demo";
             byte[] b=str.getBytes();
             file.write(b);
