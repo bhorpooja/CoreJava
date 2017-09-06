@@ -7,8 +7,8 @@ import java.io.IOException;
 /**
  * Created by pooja on 4/9/17.
  */
-class CreateFile{
-    void create(){
+class WriteFile{
+    void writeToFile(){
         try (FileOutputStream file = new FileOutputStream("/home/pooja/pooja.txt")) {
             String str="File handling Demo";
             byte[] b=str.getBytes();
@@ -21,9 +21,9 @@ class CreateFile{
         }
     }
 }
-public class javaFileDemo {
+public class javaFileOut {
     public static void main(String[] args) {
-        CreateFile c=new CreateFile();
-        c.create();
+        WriteFile c=new WriteFile();
+        c.writeToFile();
     }
 }
