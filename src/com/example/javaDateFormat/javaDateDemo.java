@@ -1,4 +1,4 @@
-package com.example.DateFormat;
+package com.example.javaDateFormat;
 
 import java.text.DateFormat;
 
@@ -26,10 +26,10 @@ class Test{
         str=DateFormat.getDateInstance(3).format(date);
         System.out.println(str);
 
-//        str=DateFormat.getTimeInstance(DateFormat.AM_PM_FIELD).format(date);
+//        str=javaDateFormat.getTimeInstance(javaDateFormat.AM_PM_FIELD).format(date);
 //        System.out.println(str);
 
-//        str=DateFormat.getTimeInstance(11).format(date);
+//        str=javaDateFormat.getTimeInstance(11).format(date);
 //        System.out.println(str);
 
 
@@ -42,7 +42,7 @@ class Test{
         str=DateFormat.getTimeInstance(0).format(date);
         System.out.println(str);
 
-//        str=DateFormat.getTimeInstance(1).format(date);
+//        str=javaDateFormat.getTimeInstance(1).format(date);
 //        System.out.println(str);
 
         str=DateFormat.getTimeInstance(2).format(date);
@@ -51,7 +51,7 @@ class Test{
         str=DateFormat.getTimeInstance(3).format(date);
         System.out.println(str);
 
-//        str=DateFormat.getTimeInstance(5).format(date);
+//        str=javaDateFormat.getTimeInstance(5).format(date);
 //        System.out.println(str);
 
 
@@ -63,46 +63,46 @@ class Test{
         str=DateFormat.getDateTimeInstance(0,0).format(date);
         System.out.println(str);
 
-//        str=DateFormat.getDateTimeInstance(0,1).format(date);
+//        str=javaDateFormat.getDateTimeInstance(0,1).format(date);
 //        System.out.println(str);
 
-//        str=DateFormat.getDateTimeInstance(0,2).format(date);
+//        str=javaDateFormat.getDateTimeInstance(0,2).format(date);
 //        System.out.println(str);
 //
-//        str=DateFormat.getDateTimeInstance(0,3).format(date);
+//        str=javaDateFormat.getDateTimeInstance(0,3).format(date);
 //        System.out.println(str);
 //
-//        str=DateFormat.getDateTimeInstance(1,0).format(date);
+//        str=javaDateFormat.getDateTimeInstance(1,0).format(date);
 //        System.out.println(str);
 
         str=DateFormat.getDateTimeInstance(1,1).format(date);
         System.out.println(str);
 
-//        str=DateFormat.getDateTimeInstance(1,2).format(date);
+//        str=javaDateFormat.getDateTimeInstance(1,2).format(date);
 //        System.out.println(str);
 //
-//        str=DateFormat.getDateTimeInstance(1,3).format(date);
+//        str=javaDateFormat.getDateTimeInstance(1,3).format(date);
 //        System.out.println(str);
 
-//        str=DateFormat.getDateTimeInstance(2,0).format(date);
+//        str=javaDateFormat.getDateTimeInstance(2,0).format(date);
 //        System.out.println(str);
 
-//        str=DateFormat.getDateTimeInstance(2,1).format(date);
+//        str=javaDateFormat.getDateTimeInstance(2,1).format(date);
 //        System.out.println(str);
 
         str=DateFormat.getDateTimeInstance(2,2).format(date);
         System.out.println(str);
 //
-//        str=DateFormat.getDateTimeInstance(2,3).format(date);
+//        str=javaDateFormat.getDateTimeInstance(2,3).format(date);
 //        System.out.println(str);
 
-//        str=DateFormat.getDateTimeInstance(3,0).format(date);
+//        str=javaDateFormat.getDateTimeInstance(3,0).format(date);
 //        System.out.println(str);
 
-//        str=DateFormat.getDateTimeInstance(3,1).format(date);
+//        str=javaDateFormat.getDateTimeInstance(3,1).format(date);
 //        System.out.println(str);
 
-//        str=DateFormat.getDateTimeInstance(3,2).format(date);
+//        str=javaDateFormat.getDateTimeInstance(3,2).format(date);
 //        System.out.println(str);
 
         str=DateFormat.getDateTimeInstance(3,3).format(date);

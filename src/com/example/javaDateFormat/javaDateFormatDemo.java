@@ -1,4 +1,4 @@
-package com.example.DateFormat;
+package com.example.javaDateFormat;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -8,7 +8,7 @@ import java.util.Date;
  */
 public class javaDateFormatDemo {
     public static void main(String[] args) {
-        System.out.println("Java DateFormat : Date to String");
+        System.out.println("Java javaDateFormat : Date to String");
         Date date=new Date();
         System.out.println("Current Date = "+date);
 
