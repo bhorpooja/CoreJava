@@ -9,7 +9,6 @@ class Factorial{
     int fact(int num){
         int fact=1;
         temp=num;
-        String st;
         while (num>0){
             fact=fact*num;
             num=num-1;
@@ -26,13 +25,13 @@ class Factorial{
 class Fibonacci{
     int n1=0,n2=1,n3;
     Integer[] arr=new Integer[100];
-    String fibSeries(int count){
+    StringBuilder fibSeries(int count){
         System.out.println("First two elements of fibonacci series are "+n1+" "+n2);
-        String st=null;
-        for(int i=0;i<count;i++){
+        StringBuilder st=new StringBuilder();
+        for(int i=0;i<count-2;i++){
             n3=n1+n2;
-            System.out.print(n3+" ");
-            st=String.valueOf(n3).toString();
+            //System.out.print(n3+" ");
+            st=st.append(n3+" ");
             n1=n2;
             n2=n3;
 
@@ -45,7 +44,7 @@ public class javaRecursionDemo {
         Factorial f=new Factorial();
         f.showFact();
         Fibonacci fb=new Fibonacci();
-        String str=fb.fibSeries(20);
+        StringBuilder str=fb.fibSeries(20);
         System.out.println(str);
     }
 }

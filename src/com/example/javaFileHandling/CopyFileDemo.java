@@ -5,10 +5,9 @@ import java.io.*;
 /**
  * Created by pooja on 6/9/17.
  */
-class Demo {
+class Demo
+{
     FileInputStream fin = new FileInputStream("/home/pooja/out.txt");
-
-
     int len,c;
     byte[] b = new byte[1024];
     char[] ch = new char[100];
@@ -87,6 +86,7 @@ class Demo {
         fout5.close();
        // fin.close();
     }
+
     FileReader fr=new FileReader("/home/pooja/out.txt");
     FileWriter fw=new FileWriter("/home/pooja/out6.txt");
    // BufferedReader br=new BufferedReader(new FileInputStream("/home/pooja/out.txt"));
