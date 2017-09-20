@@ -26,6 +26,7 @@ public class SerializableExample implements Serializable{
     public SerializableExample(String uname,String pass){
         this.uname=uname;
         this.pass=pass;
+        //toString();
     }
 
 }
@@ -38,8 +39,9 @@ public class SerializableExample implements Serializable{
         FileOutputStream fout=new FileOutputStream("/home/pooja/Desktop/gg.txt");
         ObjectOutputStream out=new ObjectOutputStream(fout);
 
-       out.writeObject(s);
-        out.flush();
+       out.writeObject(s.toString());
+     //  out.writeObject(s.pass);
+       // out.flush();
        System.out.println("success");
        //out.close();
        //fout.close();
