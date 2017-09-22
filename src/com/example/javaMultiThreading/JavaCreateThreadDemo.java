@@ -30,7 +30,7 @@ class RunnableDemo implements Runnable{
         }
     }
 }
-public class JavaThreadDemo {
+public class JavaCreateThreadDemo {
 
     public static void main(String[] args) {
         //using Thread class
