@@ -49,6 +49,7 @@ public class javaConstructor
         System.out.println();
         //copy the values of one object to another by assigning
         // the values of one object into another
+        //without using constructor
         javaConstructor j3=new javaConstructor(20,20);
         javaConstructor j4=new javaConstructor();
         j4.a=j3.a;
