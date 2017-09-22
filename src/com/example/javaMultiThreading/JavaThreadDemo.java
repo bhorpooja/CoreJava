@@ -49,19 +49,25 @@ public class JavaThreadDemo {
        RunnableDemo r2=new RunnableDemo();
         Thread t=new Thread(r1);
         Thread tt=new Thread(r2);
+        System.out.println("Name of Thread1 : "+t.getName());
+        System.out.println("Name of Thread2 : "+tt.getName());
+        System.out.println("Id of Thread1 : "+t.getId());
+        System.out.println("Id of Thread2 : "+tt.getId());
+
         t.start();
-//        try {
-//            t.join();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            t.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         tt.start();
-//        try {
-//            tt.join();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-        System.out.println("Multithreading Demo");
+        try {
+            tt.join(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        t.setName("Daemon Thread");
+        System.out.println("After changing name of Thread1 :"+t.getName());
 
     }
 
